@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ramen Rating App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Ramen Rating App</h1>
+    </header>
+
+    <div id="ramen-menu" class="ramen-menu"></div>
+
+    <div id="ramen-detail" class="ramen-detail">
+        <img class="detail-image" src="" alt="Ramen Image">
+        <h2 class="name"></h2>
+        <h3 class="restaurant"></h3>
+        <p class="rating">Rating: <span></span></p>
+        <p class="comment">Comment: <span></span></p>
+    </div>
+
+    <form id="new-ramen">
+        <h2>Add New Ramen</h2>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div>
+            <label for="restaurant">Restaurant:</label>
+            <input type="text" id="restaurant" required>
+        </div>
+        <div>
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" required>
+        </div>
+        <div>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="1" max="5" required>
+        </div>
+        <div>
+            <label for="comment">Comment:</label>
+            <input type="text" id="comment">
+        </div>
+        <button type="submit">Add Ramen</button>
+    </form>
+
+    <script src="index.js"></script>
 </body>
 </html>
